@@ -70,4 +70,12 @@ tr td {
 }
 tbody tr:hover {
     background-color: darkslategray;
+    color: #EEEEEE;
+}
+tbody tr:hover .thumbnail {
+    border-color: #E0E0E0;
+}
+.thumbnail {
+    border: 1px solid #616161;
+    padding: 0.2em;
 }
