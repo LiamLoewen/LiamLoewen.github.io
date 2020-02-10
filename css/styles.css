@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+
+/* general text formatting */
+
+h1, h2, h3 {
+ font-family: 'Merriweather', serif;    
+}
+h1 {
+   text-align: center;
+   font-weight: bold;
+   font-size: 36px;      
+}
+h2 {
+   background-color: #616161;
+   color: white;
+   padding: 0.25em;
+   text-align: center;
+   font-weight: bold;
+   font-size: 24px;    
+}
+
+body {
+   font-family: 'Open Sans', Arial, sans-serif;
+   font-size: 16px;
+   background-color: #F5F5F5;    
+}
+
+section {
+   margin: 2em auto;
+   clear: left;
+
+   width: 90%;    
+}
+
+figure {
+   float: left;
+}
+
+img {
+   width: 100%;
+}
+
+figcaption {
+   margin-bottom: 1em;   
+}
+
+/* JPG Quality */
+#s1 figure {
+   width: 26%;
+}
+
+/* PNG Bit Depth */
+#s2 figure {
+   width: 13%;
+}
+
+/* Raster/Vector Resizing */
+.f1 {
+   width: 200px;
+}
+.f2 {
+   width: 350px;
+}
+.f3 {
+   width: 525px;
+}
+
+/* My SVG */
+svg:hover {
+   cursor: pointer;
+}
+svg:hover .svg-blue {
+   animation-name: border-color;
+   animation-duration: 3s;
+}
+svg:hover #svg-sun {
+   animation-name: sun-color;
+   animation-duration: 3s;
+}
+svg:hover .svg-border-bottom, svg:hover #svg-waves {
+   animation-name: stroke-color;
+   animation-duration: 3s;
+}
+svg:hover #svg-background {
+   animation-name: background-color;
+   animation-duration: 3s;
+}
+.svg-blue {
+   fill: #004684;
+}
+.svg-border-bottom {
+   stroke: #004684;
+   stroke-width: 10;
+   fill: none;
+}
+#svg-waves {
+   stroke: #004684;
+   stroke-width: 16;
+   fill: none;
+}
+#svg-sun {
+   fill: #F2B741;
+}
+#svg-background {
+   fill: white;
+}
+
+@keyframes stroke-color {
+   from {
+      stroke: #004684;
+   }
+   to {
+      stroke: #06799F;
+   }
+}
+@keyframes border-color {
+   from {
+      fill:#004684;
+   }
+   to {
+      fill: #06799F;
+   }
+}
+@keyframes sun-color {
+   from {
+      fill: #F2B741;
+   }
+   to {
+      fill: rgb(238, 194, 1);
+   }
+}
+@keyframes background-color {
+   from {
+      fill: white;
+   }
+   to {
+      fill: #C9F2E0;
+   }
+}

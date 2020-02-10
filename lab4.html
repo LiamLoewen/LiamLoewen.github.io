@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Lab 4 - Media Formats</title>
+   <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+   <h1> Image Comparisons</h1>
+    <section class="constant-img" id="s1">
+        <h2>JPG Quality</h2>
+        <figure>
+            <img src="images/artwork-quality100.jpg"/>
+            <figcaption>100 Quality [398 KB]</figcaption>
+        </figure>
+        <figure>
+            <img src="images/artwork-quality50.jpg"/>
+            <figcaption>50 Quality [49.5 KB]</figcaption>
+        </figure>
+        <figure>
+            <img src="images/artwork-quality10.jpg"/>
+            <figcaption>10 Quality [30.2 KB]</figcaption>
+        </figure>                        
+    </section>
+    
+    <section class="constant-img" id="s2">
+        <h2>PNG Bit Depth</h2>    
+        <figure>
+            <img src="images/artwork-256colors.png"/>
+            <figcaption>256 Colors [152 KB]</figcaption>
+        </figure>   
+        <figure>
+            <img src="images/artwork-128colors.png"/>
+            <figcaption>128 Colors [93.7 KB]</figcaption>
+        </figure>   
+        <figure>
+            <img src="images/artwork-64colors.png"/>
+            <figcaption>64 Colors [37 KB]</figcaption>
+        </figure> 
+        <figure>
+            <img src="images/artwork-32colors.png"/>
+            <figcaption>32 Colors [28 KB]</figcaption>
+        </figure> 
+        <figure>
+            <img src="images/artwork-16colors.png"/>
+            <figcaption>16 Colors [22 KB]</figcaption>
+        </figure>                                
+    </section>
+    
+    <section>
+        <h2>Raster Resizing (PNG)</h2> 
+        <figure class="f1">
+            <img src="images/logo-raster.png"/>
+            <figcaption>Original Size [175 x 94]<br/>File Size: 3.87 KB</figcaption>
+        </figure>  
+        <figure class="f2">
+            <img src="images/logo-raster-2x.png"/>
+            <figcaption>Double Size [350 x 188]<br/>File Size: 30.5 KB</figcaption>
+        </figure>  
+        <figure class="f3">
+            <img src="images/logo-raster-3x.png"/>
+            <figcaption>Triple Size [525 x 282]<br/>File Size: 51.8 KB</figcaption>
+        </figure>                             
+    </section>    
+    
+    <section>
+        <h2>Vector Resizing (SVG)</h2> 
+        <figure class="f1">
+            <img src="images/logo-vector.svg"/>
+            <figcaption>Original Size [175 x 94]<br/>File Size: 4.57 KB</figcaption>
+        </figure>  
+        <figure class="f2">
+            <img src="images/logo-vector.svg"/>
+            <figcaption>Double Size [350 x 188]<br/>File Size: 4.57 KB</figcaption>
+        </figure>  
+        <figure class="f3">
+            <img src="images/logo-vector.svg"/>
+            <figcaption>Triple Size [525 x 282]<br/>File Size: 4.57 KB</figcaption>
+        </figure>                             
+    </section>      
+    <section>
+        <h2>Your SVG Image</h2> 
+        <figure>
+            <svg width="310" height="500">
+                
+                <path id="svg-background"
+                d="         M 0,0 L 0,200 
+                            C -5,275 75,355 156,405
+                            C 230,350 315,270 310,200 
+                            L 310,0 Z" />
+
+                <!-- border -->
+                <g class="svg-blue">
+                    <rect width="300" height="10" />
+                    <rect width="10" height="200" />
+                    <rect x="300" width="10" height="200" />
+
+                    <path class="svg-border-bottom" d="M 5,200 C 0,270 75,350 158,400" />
+                    <path class="svg-border-bottom" d="M 305,200 C 305,270 235,350 152,400" />
+                </g>
+
+                <!-- text -->
+                <text class="svg-blue" font-size="125" font-weight="bold" x="25" y="115">UBC</text>
+                
+                <!-- waves -->
+                <g id="svg-waves">
+                    <path d="M 40,150  C 70,130  90,130  120,150" />
+                    <path d="M 119,150 C 149,170 169,170 199,150" />
+                    <path d="M 198,150 C 228,130 248,130 278,150" />
+                    
+                    <path d="M 40,190  C 70,170  90,170  120,190" />
+                    <path d="M 119,190 C 149,210 169,210 199,190" />
+                    <path d="M 198,190 C 228,170 248,170 278,190" />
+                    
+                    <path d="M 40,230  C 70,210  90,210  120,230" />
+                    <path d="M 119,230 C 149,250 169,250 199,230" />
+                    <path d="M 198,230 C 228,210 248,210 278,230" />
+                </g>
+                
+                
+                <!-- sun -->
+                <g id="svg-sun">
+                    <ellipse cx="155" cy="300" rx="70" ry="32" />
+                    <ellipse cx="165" cy="305" rx="20" ry="50" transform="rotate(-50, 165,355)" />
+                    <ellipse cx="145" cy="305" rx="20" ry="50" transform="rotate(50, 145,355)" />
+                    
+                    <path d="M 85,303  L 65,230  L 120,290 Z" />
+                    <path d="M 105,280 L 110,215 L 140,275 Z" />
+                    <path d="M 135,275 L 155,205 L 175,275 Z" />
+                    <path d="M 170,275 L 200,215 L 205,280 Z" />
+                    <path d="M 190,290 L 245,230 L 225,303 Z" />
+                </g>
+
+                Sorry, your browser does not support inline SVG.  
+            </svg>
+ 
+
+            <figcaption>My SVG image</figcaption>
+        </figure>                          
+    </section> 
+</body>
+</html>

@@ -1,0 +1,109 @@
+header, footer {
+    color:              white;
+    background-color:   #312c32;
+    margin:             1.5em 4em 0.5em 4em;
+}
+h1, h2, h3, nav, footer {
+    font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+}
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+h2 {
+    font-size: 0.75em;
+}
+h3 {
+    font-size: 1.125em;
+}
+nav {
+    font-size: 1.125em;
+}
+header nav {
+    padding-left: 0.5em;
+    padding-bottom: 0.75em;
+}
+body {
+    font-family: Georgia, Cambria, "Times New Roman", serif;
+    font-size: 100%;
+    background-color: #98dafc;
+}
+a:link {
+    color: #98dafc;
+    font-weight: bold;
+}
+a:visited {
+    color: #daad86;
+}
+a:hover {
+    background-color: #FFFFCC;
+}
+main {
+    background-color: white;
+    margin: 1em 4em 1em 4em;
+    padding: 0.5em;
+}
+#painting-title {
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.byline {
+    color: #728b96;
+    font-style: italic;
+}
+#big-img {
+    border: 1px solid black;
+    padding: 0.25em;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+/* big-image description box */
+#func-gradient {
+    border: 1px solid gray;
+    background-image: linear-gradient(grey, white);
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 0.25em;
+    border-radius: 4px;
+}
+/* 'Shopping cart' and 'add to favs' */
+#img-gradient {
+    background-image: url("../images/gray-gradient.png");
+    border: 1px solid grey;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 2.5em;
+    border-radius: 4px;
+    padding: 0.5em;
+    font-size: 70%;    
+}
+#related-painting-line {
+    border-bottom: 2px solid grey;
+    margin-bottom: 0.5em;
+}
+.comment {
+    border-bottom: 1px dotted grey;
+}
+#review-section {
+    margin-top: 1.2em;
+}
+#Reviews {
+    padding-top: 0.75em;
+    padding-bottom: 1.5em;
+    margin-bottom: 0.75em;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+footer {
+    padding: 0.4em;
+}
+#copyright-notice {
+    padding-top: 0.5em;
+    padding-bottom: 0.75em;
+}

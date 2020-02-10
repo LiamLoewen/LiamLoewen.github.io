@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            COSC 264 - Lab 2
+        </title>
+         <link rel="stylesheet" href="css/reset.css"/>
+         <link rel="stylesheet" href="css/lab2.css"/> 
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <h1>
+                COSC 264 - Lab 2
+            </h1>
+            <nav>
+                <a href="#">Home</a> | <a href="#">Artists</a> | <a href="#">Artworks</a> | <a href="#">About Us</a> | <a href="#">Search</a>
+            </nav>
+        </header>
+        <main>
+            <!-- Rivière portrait -->
+            <section>
+                <h2 id="painting-title">
+                    Mademoiselle Caroline Rivière
+                </h2>
+                <p class="byline">
+                    by <a href="images/06010-large.jpg">Jean-Auguste-Dominique Ingres</a>
+                </p>
+                <a href="images/06010-large.jpg">
+                    <img id="big-img" src="images/06010-medium.jpg" alt="by Jean-Auguste-Dominique Ingres" title="by Jean-Auguste-Dominique Ingres" />
+                </a>
+                <p>
+                    The portrait of Mademoiselle Caroline Rivière was painted in 1806 by the French Neoclassical artist Jean Auguste Dominique Ingres, and today hangs in the Louvre. It is the third of three portraits of the Rivière family the artist painted that year.
+                </p>
+                <p id="func-gradient">
+                    Date: <em>1806</em><br>
+                    Medium: <em>Oil on Canvas</em><br>
+                    Dimensions: <em>100 x 70 cm</em><br>
+                    Home: <em>Musèe du Louvre, Paris</em>
+                </p>
+                <p id="img-gradient">
+                    <a href="#"><img src="images/cart.png" alt="Add to Cart"/></a>
+                    <a href="#">Add to Cart</a>
+                    <a href="#"><img src="images/favorites.png" alt="Add to Favorites"/></a>
+                    <a href="#">Add to Favorites</a>
+                </p>
+            </section>
+
+            <!-- Related Paintings -->
+            <section>
+                <h3 id="related-painting-line">
+                    Related Paintings
+                </h3>
+                <div>
+                    <a href="images/06020.jpg"><img src="images/06020.jpg" alt="related image"/></a>  
+                    <a href="images/07020.jpg"><img src="images/07020.jpg" alt="related image"/></a>
+                    <a href="images/13030.jpg"><img src="images/13030.jpg" alt="related image"/></a>
+                    <a href="images/05030.jpg"><img src="images/05030.jpg" alt="related image"/></a>
+                </div>
+            </section>
+
+            <!-- Reviews -->
+            <section id="review-section">
+                <h3>
+                    Reviews
+                </h3>
+                <div id="Reviews">
+                    <div>
+                    <span class="byline">
+                        <strong>Love this painting</strong><br>
+                        John Smith
+                    </span>
+                    <img src="images/star-orange.png" alt="orange star"/>
+                    <img src="images/star-orange.png" alt="orange star"/>
+                    <img src="images/star-orange.png" alt="orange star"/>
+                    <img src="images/star-orange.png" alt="orange star"/>
+                    <img src="images/star-white.png" alt="blank star"/>
+                    <p class="comment">
+                        <small>This is one of my favorites!</small>
+                    </p>
+                    </div>
+                <!--
+                    <div>
+                        <strong>Meh</strong><br>
+                        Lyric Stewart
+                        <img src="images/star-orange.png" alt="orange star"/>
+                        <img src="images/star-white.png" alt="blank star"/>
+                        <img src="images/star-white.png" alt="blank star"/>
+                        <img src="images/star-white.png" alt="blank star"/>
+                        <img src="images/star-white.png" alt="blank star"/>
+                        <p class="comment">
+                            <small>I've done better</small>
+                        </p>
+                    </div>
+                -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <!--<hr>-->
+            <nav>
+                <a href="#">Home</a> | <a href="#">Art Works</a> | <a href="#">Artists</a> | <a href="#">About Us</a>
+            </nav>
+            <p id="copyright-notice">
+                <em>
+                    Copyright &copy; 2020 My First HTML Page
+                </em>
+            </p>
+        </footer>
+    </body>
+</html>
