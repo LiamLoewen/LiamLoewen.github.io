@@ -1,7 +1,10 @@
 /* Lab 3 style sheet */
-fieldset {
+body {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16pt;
+}
+fieldset {
+    margin: 0 0.5em 0 0.5em;
     padding-top: 1em;
     padding-left: 2em;
     padding-right: 2em;
@@ -24,6 +27,28 @@ fieldset div {
     border: 1px solid #616161;
     margin-bottom: 1em;
 }
+
+#home-button {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: darkslategray;
+}
+#home-span {
+    font-size: 16pt;
+    transition: font-size 0.5s;
+}
+#home-span:hover {
+    font-size: 20pt;
+}
+#home-button a:link, #home-button a:visited {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
 #search-filter {
     background-color: #E0E0E0;
     padding: 1em;

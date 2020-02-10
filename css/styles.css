@@ -4,13 +4,14 @@
 
 /* general text formatting */
 
+
 h1, h2, h3 {
  font-family: 'Merriweather', serif;    
 }
 h1 {
    text-align: center;
    font-weight: bold;
-   font-size: 36px;      
+   font-size: 36px;    
 }
 h2 {
    background-color: #616161;
@@ -25,6 +26,29 @@ body {
    font-family: 'Open Sans', Arial, sans-serif;
    font-size: 16px;
    background-color: #F5F5F5;    
+}
+
+#home-button {
+   float: right;
+   position: sticky;
+   top: 0;
+   text-align: center;
+   margin-bottom: 1em;
+   border: 0.5em solid darkslategray;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+   background-color: darkslategray;
+}
+#home-span {
+   font-size: 16pt;
+   transition: font-size 0.5s;
+}
+#home-span:hover {
+   font-size: 20pt;
+}
+#home-button a:link, #home-button a:visited {
+   color: #EEEEEE;
+   text-decoration: none;
 }
 
 section {
