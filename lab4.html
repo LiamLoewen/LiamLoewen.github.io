@@ -3,6 +3,7 @@
 <head>
    <meta charset="utf-8">
    <title>Lab 4 - Media Formats</title>
+   <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -10,78 +11,86 @@
    <h1> Image Comparisons</h1>
     <section class="constant-img" id="s1">
         <h2>JPG Quality</h2>
-        <figure>
-            <img src="images/artwork-quality100.jpg"/>
-            <figcaption>100 Quality [398 KB]</figcaption>
-        </figure>
-        <figure>
-            <img src="images/artwork-quality50.jpg"/>
-            <figcaption>50 Quality [49.5 KB]</figcaption>
-        </figure>
-        <figure>
-            <img src="images/artwork-quality10.jpg"/>
-            <figcaption>10 Quality [30.2 KB]</figcaption>
-        </figure>                        
+        <div class="flex-img">
+            <figure>
+                <img src="images/artwork-quality100.jpg"/>
+                <figcaption>100 Quality [398 KB]</figcaption>
+            </figure>
+            <figure>
+                <img src="images/artwork-quality50.jpg"/>
+                <figcaption>50 Quality [49.5 KB]</figcaption>
+            </figure>
+            <figure>
+                <img src="images/artwork-quality10.jpg"/>
+                <figcaption>10 Quality [30.2 KB]</figcaption>
+            </figure>
+        </div>                 
     </section>
     
     <section class="constant-img" id="s2">
-        <h2>PNG Bit Depth</h2>    
-        <figure>
-            <img src="images/artwork-256colors.png"/>
-            <figcaption>256 Colors [152 KB]</figcaption>
-        </figure>   
-        <figure>
-            <img src="images/artwork-128colors.png"/>
-            <figcaption>128 Colors [93.7 KB]</figcaption>
-        </figure>   
-        <figure>
-            <img src="images/artwork-64colors.png"/>
-            <figcaption>64 Colors [37 KB]</figcaption>
-        </figure> 
-        <figure>
-            <img src="images/artwork-32colors.png"/>
-            <figcaption>32 Colors [28 KB]</figcaption>
-        </figure> 
-        <figure>
-            <img src="images/artwork-16colors.png"/>
-            <figcaption>16 Colors [22 KB]</figcaption>
-        </figure>                                
+        <h2>PNG Bit Depth</h2> 
+        <div class="flex-img">
+            <figure>
+                <img src="images/artwork-256colors.png"/>
+                <figcaption>256 Colors [152 KB]</figcaption>
+            </figure>   
+            <figure>
+                <img src="images/artwork-128colors.png"/>
+                <figcaption>128 Colors [93.7 KB]</figcaption>
+            </figure>   
+            <figure>
+                <img src="images/artwork-64colors.png"/>
+                <figcaption>64 Colors [37 KB]</figcaption>
+            </figure> 
+            <figure>
+                <img src="images/artwork-32colors.png"/>
+                <figcaption>32 Colors [28 KB]</figcaption>
+            </figure> 
+            <figure>
+                <img src="images/artwork-16colors.png"/>
+                <figcaption>16 Colors [22 KB]</figcaption>
+            </figure> 
+        </div>                           
     </section>
     
     <section>
         <h2>Raster Resizing (PNG)</h2> 
-        <figure class="f1">
-            <img src="images/logo-raster.png"/>
-            <figcaption>Original Size [175 x 94]<br/>File Size: 3.87 KB</figcaption>
-        </figure>  
-        <figure class="f2">
-            <img src="images/logo-raster-2x.png"/>
-            <figcaption>Double Size [350 x 188]<br/>File Size: 30.5 KB</figcaption>
-        </figure>  
-        <figure class="f3">
-            <img src="images/logo-raster-3x.png"/>
-            <figcaption>Triple Size [525 x 282]<br/>File Size: 51.8 KB</figcaption>
-        </figure>                             
+        <div class="flex-img">
+            <figure class="f1">
+                <img src="images/logo-raster.png"/>
+                <figcaption>Original Size [175 x 94]<br/>File Size: 3.87 KB</figcaption>
+            </figure>  
+            <figure class="f2">
+                <img src="images/logo-raster-2x.png"/>
+                <figcaption>Double Size [350 x 188]<br/>File Size: 30.5 KB</figcaption>
+            </figure>  
+            <figure class="f3">
+                <img src="images/logo-raster-3x.png"/>
+                <figcaption>Triple Size [525 x 282]<br/>File Size: 51.8 KB</figcaption>
+            </figure>   
+        </div>   
     </section>    
     
     <section>
         <h2>Vector Resizing (SVG)</h2> 
-        <figure class="f1">
-            <img src="images/logo-vector.svg"/>
-            <figcaption>Original Size [175 x 94]<br/>File Size: 4.57 KB</figcaption>
-        </figure>  
-        <figure class="f2">
-            <img src="images/logo-vector.svg"/>
-            <figcaption>Double Size [350 x 188]<br/>File Size: 4.57 KB</figcaption>
-        </figure>  
-        <figure class="f3">
-            <img src="images/logo-vector.svg"/>
-            <figcaption>Triple Size [525 x 282]<br/>File Size: 4.57 KB</figcaption>
-        </figure>                             
+        <div class="flex-img">
+            <figure class="f1">
+                <img src="images/logo-vector.svg"/>
+                <figcaption>Original Size [175 x 94]<br/>File Size: 4.57 KB</figcaption>
+            </figure>  
+            <figure class="f2">
+                <img src="images/logo-vector.svg"/>
+                <figcaption>Double Size [350 x 188]<br/>File Size: 4.57 KB</figcaption>
+            </figure>  
+            <figure class="f3">
+                <img src="images/logo-vector.svg"/>
+                <figcaption>Triple Size [525 x 282]<br/>File Size: 4.57 KB</figcaption>
+            </figure> 
+        </div>                          
     </section>      
     <section>
         <h2>Your SVG Image</h2> 
-        <figure>
+        <figure id="svg-fig">
             <svg width="310" height="500">
                 
                 <path id="svg-background"
@@ -136,7 +145,7 @@
             </svg>
  
 
-            <figcaption>My SVG image</figcaption>
+            <figcaption id="svg-cap">My SVG image</figcaption>
         </figure>                          
     </section> 
 </body>

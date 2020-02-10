@@ -55,6 +55,7 @@ fieldset div {
 }
 #search-filter p {
     text-align: center;
+    margin: 1em 0 1em 0;
 }
 #search-bar {
     width: 300px;
