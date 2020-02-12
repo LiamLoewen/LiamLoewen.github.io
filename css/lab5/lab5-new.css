@@ -8,14 +8,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* font-sizes */
 header h1 {
-    font-size: 48px;
+    font-size: 3em;
 }
 header h2 {
-    font-size: 36px;
+    font-size: 2em;
     margin-bottom: 30px;
 }
 header span {
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 /* links */
@@ -23,13 +23,37 @@ a:visited {
     color: white;
 }
 
+/* home button */
+#home-button {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    border: 0.5em solid darkslategray;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    background-color: darkslategray;
+    z-index: 2;
+ }
+ #home-span {
+    font-size: 16pt;
+    transition: font-size 0.5s;
+ }
+ #home-span:hover {
+    font-size: 20pt;
+ }
+ #home-button a:link, #home-button a:visited {
+    color: #EEEEEE;
+    text-decoration: none;
+ }
+
 /* banner */
 header {
     display: grid;
     grid-template-rows: 25% 100px auto;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 30% 40% auto;
 }
 .banner {
+    width: 100%;
     filter: brightness(30%) grayscale(90%);
     grid-column: 1 / span 4;
     grid-row: 1 / span 4;
@@ -47,6 +71,27 @@ header {
 .banner--title span {
     border: 1px solid white;
     padding: 0.25em;
+    transition: font-size 0.25s;
+}
+.banner--title span:hover {
+    font-size: 2em;
+}
+.banner--title a:link, .banner--title a:visited {
+    text-decoration: none;
+}
+
+/* gradient */
+#gradient-decoration {
+    min-height: 60px;
+    background-image: linear-gradient(#202020 -10%, white);
+}
+
+/* article */
+article {
+    margin-top: 1em;
+    position: relative;
+    left: 8%;
+    width: 84%;
 }
 
 /* highlights */ 
