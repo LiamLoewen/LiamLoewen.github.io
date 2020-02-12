@@ -1,0 +1,159 @@
+/* font-families */
+body, header, div, p {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Marriweather", "Times New Roman", serif;
+}
+
+/* font-sizes */
+header h1 {
+    font-size: 48px;
+}
+header h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+header span {
+    font-size: 24px;
+}
+
+/* links */
+a:visited {
+    color: white;
+}
+
+/* banner */
+.banner {
+    filter: brightness(30%) grayscale(90%);
+    width: 100%;
+}
+.banner--title {
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 340px;
+    top: 120px;
+}
+.banner--title span {
+    border: 1px solid white;
+    padding: 0.25em;
+}
+
+/* highlights */
+.highlights h2 {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    margin-bottom: 0.35em;
+}
+.highlights--media {
+    float: left;
+    margin-right: 0.5em;
+}
+.highlights--container {
+    width: 50%;
+}
+#highlights-A {
+    float: left;
+}
+#highlights-B {
+    float: right;
+}
+.highlights {
+    position: relative;
+    width: 1170px;
+    left: 7%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* highlights text */
+.highlights--text {
+    margin-right: 0.5em;
+}
+.highlights--button {
+    float: right;
+    padding: 0.2em;
+    background-color: #FF9800;
+}
+.highlights--button:link {
+    text-decoration: none;
+}
+.highlights--text h4 {
+    margin: 0 0;
+}
+
+/* mosaic */
+.mosaic {
+    position: relative;
+    width: 1170px;
+    top: 12em;
+    left: 7%;
+}
+.mosaic img {
+    width: 100%;
+}
+.mosaic-item {
+    position: absolute;
+}
+.mosaic--a {
+    width: 580px;
+    margin: 0 10px 10px 0;
+    top: 0;
+}
+.mosaic--b {
+    width: 285px;
+    margin: 0 10px 10px 10px;
+    top: 0;
+    left: 580px;
+}
+.mosaic--c, .mosaic--f, .mosaic--g {
+    width: 285px;
+    margin: 10px;
+}
+.mosaic--c {
+    left: 580px;
+    top: 190px;
+}
+.mosaic--d {
+    width: 285px;
+    margin: 0 0 10px 10px;
+    top: 0;
+    left: 875px;
+}
+.mosaic--e {
+    width: 285px;
+    margin: 10px 10px 10px 0;
+    top: 390px;
+}
+.mosaic--f {
+    top: 390px;
+    left: 285px;
+}
+.mosaic--g {
+    top: 390px;
+    left: 580px;
+}
+.mosaic--h {
+    width: 285px;
+    margin: 10px 0 10px 10px;
+    top: 390px;
+    left: 875px;
+}
+.mosaic--i {
+    width: 285px;
+    margin: 10px 10px 0 0;
+    top: 790px;
+}
+.mosaic--j {
+    width: 580px;
+    margin: 10px 10px 0 10px;
+    top: 590px;
+    left: 285px;
+}
+.mosaic--k {
+    width: 285px;
+    margin: 10px 0 0 10px;
+    top: 790px;
+    left: 875px;
+}
